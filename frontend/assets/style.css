@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --color-white: #fff;
+    --color-black: #333;
+    --color-main: #add8e6;
+}
+
+body {
+    background: #add8e6;
+}
+
+nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+nav button {
+    border: none;
+    background: var(--color-main);
+    color: var(--color-black);
+    font-size: 2rem;
+    margin: 20px;
+    cursor: pointer;
+    outline: none;
+}
+nav button::after {
+    content: "";
+    display: block;
+    width: 0px;
+    margin: 2px auto 0 auto;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--color-black);
+    transition: width 0.2s ease-out;
+}
+nav button:hover::after {
+    width: 100%;
+}
+
+form-signup{
+    display: none;
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    background: var(--color-main);
+    box-shadow: 20px 20px 60px #93b8c4, -20px -20px 60px #c7f8ff;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+label {
+    align-self: flex-start;
+    color: var(--color-black);
+    font-weight: bolder;
+}
+input {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+input::placeholder {
+    color: var(--color-black);
+}
+
+input[type='submit']{
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+input[type='submit']:hover{
+    color: var(--color-main);
+}

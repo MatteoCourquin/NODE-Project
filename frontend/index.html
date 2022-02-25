@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Node</title>
+</head>
+<body>
+
+    <nav>
+        <button class="signup">Signup</button>
+        <button class="login">Login</button>
+    </nav>
+
+    <form class="form-login" action='/user/login' method='post'>
+
+        <h1>Login</h1>
+
+        <label for='name'>Name</label> 
+        <input type='text' id='name' name='name' placeholder='Name' /> 
+
+        <label for='password'>Password</label>
+        <input type='password' id='password' name='password' placeholder='Password' />
+
+        <input type='submit' value='LogIn'/>
+
+    </form>
+
+    <form class="form-signup" action='/user/signup' method='post'>
+
+        <h1>Signup</h1>
+
+        <label for='name'>Name</label> 
+        <input type='text' id='name' name='name' placeholder='Name' /> 
+
+        <label for='password'>Password</label>
+        <input type='password' id='password' name='password' placeholder='Password' />
+
+        <input type='submit' value='Create an Account'/>
+
+    </form>
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>
